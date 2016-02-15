@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e -x
+
+ROOT_DIR_PATH=$(cd $(dirname $0)/.. && pwd)
+
+# fail fast if gosub is not installed
+($ROOT_DIR_PATH/scripts/broker-deps) | xargs gosub sync -i src/cf-rabbitmq-smoke-tests \
+                                                        -i src/rabbitmq-cluster-migration-tool \
+                                                        -i src/rabbitmq-upgrade-preparation \
+                                                        -i src/route-registrar/src/github.com/cloudfoundry-incubator/route-registrar \
+                                                        -i system_test/rabbit-example-app \
+                                                        -i system_test/test_app \

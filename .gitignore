@@ -3,7 +3,6 @@ config/private.yml
 releases/*.tgz
 dev_releases
 blobs
-.envrc
 .blobs
 .idea
 .dev_builds
@@ -11,6 +10,7 @@ blobs
 .final_builds/packages/**/*.tgz
 coverage
 /repos
+pkg
 releases/**/*.tgz
 .DS_Store
 *.swp

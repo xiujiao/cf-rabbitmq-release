@@ -1,3 +1,11 @@
 set -e
 
-cp -a rabbitmq-broker/* ${BOSH_INSTALL_TARGET}
+mkdir -p ${BOSH_INSTALL_TARGET}/src
+
+cp -a github.com ${BOSH_INSTALL_TARGET}/src/github.com
+
+export GOROOT=$(readlink -nf /var/vcap/packages/golang)
+export GOPATH=$BOSH_INSTALL_TARGET
+export PATH=$GOROOT/bin:$PATH
+
+go install github.com/pivotal-cf/cf-rabbitmq-broker/cmd/rabbitmq-broker
