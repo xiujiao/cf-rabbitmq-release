@@ -11,6 +11,7 @@ blobs
 coverage
 /repos
 pkg
+bin
 releases/**/*.tgz
 .DS_Store
 *.swp
