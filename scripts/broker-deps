@@ -3,4 +3,5 @@ ROOT_DIR_PATH=$(cd $(dirname $0)/.. && pwd)
 
 gosub list \
   -a github.com/pivotal-cf/cf-rabbitmq-broker/... \
+  -t github.com/pivotal-cf/cf-rabbitmq-broker/integration/... \
 
