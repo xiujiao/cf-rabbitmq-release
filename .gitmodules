@@ -44,3 +44,7 @@
 	path = src/github.com/onsi/gomega
 	url = https://github.com/onsi/gomega
 	branch = master
+[submodule "src/github.com/streadway/amqp"]
+	path = src/github.com/streadway/amqp
+	url = https://github.com/streadway/amqp
+	branch = master

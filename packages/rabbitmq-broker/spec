@@ -37,3 +37,4 @@ files:
   - github.com/pivotal-cf/cf-rabbitmq-broker/cmd/rabbitmq-broker/*.go # gosub
   - github.com/pivotal-cf/cf-rabbitmq-broker/integration/*.go # gosub
   - github.com/pivotal-golang/lager/*.go # gosub
+  - github.com/streadway/amqp/*.go # gosub
