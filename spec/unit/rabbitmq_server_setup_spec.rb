@@ -16,7 +16,7 @@ RSpec.describe 'Configuration' do
 
       rendered_template = renderer.render('jobs/rabbitmq-server/templates/setup.sh.erb')
 
-      expect(rendered_template).to include('HOSTS="${HOSTS}{host, {10,244,9,6}, [\"da3be74c053640fe92c6a39e2d7a5e46\"]}.\n"')
+      expect(rendered_template).to include('HOSTS="${HOSTS}{host, {10,245,9,6}, [\"da3be74c053640fe92c6a39e2d7a5e46\"]}.\n"')
       expect(rendered_template).to include('HOSTS="${HOSTS}{host, {10,244,9,10}, [\"1bfd6e8e2eacf0a5ed6405a6db279bc1\"]}.\n"')
     end
   end

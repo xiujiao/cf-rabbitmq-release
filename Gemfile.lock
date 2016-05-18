@@ -114,7 +114,7 @@ GEM
       fog-core (~> 1.22)
       fog-json
       inflecto (~> 0.0.2)
-    fog-core (1.38.0)
+    fog-core (1.39.0)
       builder
       excon (~> 0.49)
       formatador (~> 0.2)
@@ -125,7 +125,7 @@ GEM
     fog-ecloud (0.3.0)
       fog-core
       fog-xml
-    fog-google (0.3.0)
+    fog-google (0.3.1)
       fog-core
       fog-json
       fog-xml
@@ -246,7 +246,7 @@ GEM
       cliver (~> 0.3.1)
       multi_json (~> 1.0)
       websocket-driver (>= 0.2.0)
-    prof (0.31.7)
+    prof (0.31.9)
       bosh_cli
       capybara
       capybara-webkit
@@ -298,7 +298,7 @@ GEM
     rspec-expectations (3.4.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.4.0)
-    rspec-instafail (0.4.0)
+    rspec-instafail (0.5.0)
       rspec
     rspec-mocks (3.4.1)
       diff-lcs (>= 1.2.0, < 2.0)
@@ -328,14 +328,14 @@ GEM
     stomp (1.3.5)
     terminal-table (1.4.5)
     thread_safe (0.3.5)
-    tilt (2.0.2)
+    tilt (2.0.3)
     trollop (2.1.2)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
-    vm_shepherd (3.1.6)
+    vm_shepherd (3.1.7)
       aws-sdk-v1
       fog (= 1.34.0)
       net-ssh
@@ -362,8 +362,8 @@ DEPENDENCIES
   rabbitmq_http_api_client (~> 1.3.0)
   rake (~> 10.3)
   rspec (~> 3.3)
-  rspec-instafail (~> 0.4.0)
+  rspec-instafail (~> 0.5.0)
   stomp (~> 1.3.1)
 
 BUNDLED WITH
-   1.12.1
+   1.12.3
