@@ -7,9 +7,6 @@
 [submodule "src/rabbitmq-upgrade-preparation"]
 	path = src/rabbitmq-upgrade-preparation
 	url = git@github.com:pivotal-cf/rabbitmq-upgrade-preparation.git
-[submodule "src/cf-rabbitmq-smoke-tests"]
-	path = src/cf-rabbitmq-smoke-tests
-	url = git@github.com:pivotal-cf/cf-rabbitmq-smoke-tests.git
 [submodule "system_test/test_app"]
 	path = system_test/test_app
 	url = git://github.com/pivotal-cf/rabbit-labrat.git
@@ -48,3 +45,6 @@
 	path = src/github.com/streadway/amqp
 	url = https://github.com/streadway/amqp
 	branch = master
+[submodule "src/github.com/pivotal-cf/cf-rabbitmq-smoke-tests"]
+	path = src/github.com/pivotal-cf/cf-rabbitmq-smoke-tests
+	url = git@github.com:pivotal-cf/cf-rabbitmq-smoke-tests
