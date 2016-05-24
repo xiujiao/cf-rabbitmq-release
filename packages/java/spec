@@ -1,5 +1,0 @@
----
-name: java
-files:
-- java/jre-1.8.0_77.tar.gz
-dependencies: []
