@@ -11,7 +11,7 @@ check_args() {
   if [ -z "$BOSH_MANIFEST" ]
   then
     log "Please set the BOSH_MANIFEST environment variable to the path to your manifest file"
-    log "E.G. export BOSH_MANIFEST=/home/example/cf-redis-release/manifests/bosh-lite.yml"
+    log "E.G. export BOSH_MANIFEST=/home/example/cf-rabbitmq-release/manifests/bosh-lite.yml"
     exit 1
   fi
 }
@@ -28,5 +28,11 @@ edit_manifest() {
 check_args
 
 grep -q "status --uuid" "$BOSH_MANIFEST" && edit_manifest;
+
+export GOPATH=$PWD
+export PATH=$PWD/bin:$PATH
+pushd src/github.com/pivotal-cf/cf-rabbitmq-broker
+  ginkgo -r .
+popd
 
 bundle install && bundle exec rake spec
