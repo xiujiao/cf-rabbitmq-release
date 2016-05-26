@@ -2,6 +2,7 @@
 name: rabbitmq-broker
 dependencies: [golang]
 files:
+  - github.com/cloudfoundry-incubator/candiedyaml/*.go # gosub
   - github.com/gorilla/context/*.go # gosub
   - github.com/gorilla/mux/*.go # gosub
   - github.com/onsi/ginkgo/*.go # gosub
@@ -21,6 +22,8 @@ files:
   - github.com/onsi/ginkgo/types/*.go # gosub
   - github.com/onsi/gomega/*.go # gosub
   - github.com/onsi/gomega/format/*.go # gosub
+  - github.com/onsi/gomega/gbytes/*.go # gosub
+  - github.com/onsi/gomega/gexec/*.go # gosub
   - github.com/onsi/gomega/internal/assertion/*.go # gosub
   - github.com/onsi/gomega/internal/asyncassertion/*.go # gosub
   - github.com/onsi/gomega/internal/oraclematcher/*.go # gosub
@@ -34,7 +37,7 @@ files:
   - github.com/pivotal-cf/brokerapi/*.go # gosub
   - github.com/pivotal-cf/brokerapi/auth/*.go # gosub
   - github.com/pivotal-cf/cf-rabbitmq-broker/*.go # gosub
+  - github.com/pivotal-cf/cf-rabbitmq-broker/broker_config/*.go # gosub
   - github.com/pivotal-cf/cf-rabbitmq-broker/cmd/rabbitmq-broker/*.go # gosub
   - github.com/pivotal-cf/cf-rabbitmq-broker/integration/*.go # gosub
   - github.com/pivotal-golang/lager/*.go # gosub
-  - github.com/streadway/amqp/*.go # gosub

@@ -41,10 +41,13 @@
 	path = src/github.com/onsi/gomega
 	url = https://github.com/onsi/gomega
 	branch = master
+[submodule "src/github.com/cloudfoundry-incubator/candiedyaml"]
+	path = src/github.com/cloudfoundry-incubator/candiedyaml
+	url = https://github.com/cloudfoundry-incubator/candiedyaml
+	branch = master
 [submodule "src/github.com/streadway/amqp"]
 	path = src/github.com/streadway/amqp
 	url = https://github.com/streadway/amqp
-	branch = master
 [submodule "src/github.com/pivotal-cf/cf-rabbitmq-smoke-tests"]
 	path = src/github.com/pivotal-cf/cf-rabbitmq-smoke-tests
 	url = git@github.com:pivotal-cf/cf-rabbitmq-smoke-tests
